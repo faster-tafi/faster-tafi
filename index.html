@@ -73,6 +73,19 @@
       background: #111;
       border-top: 1px solid #00ff9f33;
     }
+    .contact-icons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .contact-icons a {
+      font-size: 2em;
+      color: #00ff9f;
+    }
+    .contact-icons a:hover {
+      color: #00eaff;
+    }
   </style>
 </head>
 <body>
@@ -125,6 +138,22 @@
     </div>
   </div>
 
+  <!-- Contact Icons Section -->
+  <div class="contact-icons">
+    <a href="https://t.me/your_channel_link" target="_blank" title="Telegram Channel">
+      <i class="fab fa-telegram"></i>
+    </a>
+    <a href="https://wa.me/your_whatsapp_group_link1" target="_blank" title="WhatsApp Group 1">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://wa.me/your_whatsapp_group_link2" target="_blank" title="WhatsApp Group 2">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://wa.me/your_whatsapp_group_link3" target="_blank" title="WhatsApp Group 3">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
   <footer>
     Powered by FASTER TAFI | Stay Fast, Stay Secure
   </footer>
@@ -170,7 +199,7 @@
         localStorage.setItem(sectionId + "_date", updatedDate);
       }
 
-      document.getElementById(sectionId + "-update").innerText = `آخر تحديث: ${updatedDate}`;
+      document.getElementById(sectionId + "-update").innerText = آخر تحديث: ${updatedDate};
     }
 
     // Call update functions for each section
