@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FASTER TAFI - Server Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: black;
+      color: #00ff9f;
+      font-family: 'Orbitron', monospace;
+      overflow-x: hidden;
+    }
+    header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 15px #00ff9f;
+    }
+    header h1 {
+      font-size: 2.5em;
+      text-shadow: 0 0 10px #00ff9f;
+    }
+    .section {
+      padding: 40px;
+      border-bottom: 2px solid #00ff9f33;
+    }
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #00eaff;
+      text-shadow: 0 0 5px #00ff9f;
+    }
+    .update-date {
+      font-size: 0.9em;
+      color: #00ff9faa;
+      margin-bottom: 20px;
+    }
+    .servers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .server-box {
+      background: #111;
+      border: 2px solid #00ff9f;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 250px;
+      box-shadow: 0 0 10px #00ff9f88;
+      transition: transform 0.3s ease;
+    }
+    .server-box:hover {
+      transform: scale(1.05);
+    }
+    .server-box a {
+      color: #00ff9f;
+      text-decoration: none;
+    }
+    .server-box a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      padding: 20px;
+      text-align: center;
+      background: #111;
+      border-top: 1px solid #00ff9f33;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FASTER TAFI - Server Hub</h1>
+  </header>
+
+  <div class="section">
+    <h2>UDP Servers</h2>
+    <p id="udp-update" class="update-date"></p>
+    <div class="servers">
+      <div class="server-box">
+        <strong>Server 1</strong><br>
+        <a href="#" id="udp-server1">Download Config</a>
+      </div>
+      <div class="server-box">
+        <strong>Server 2</strong><br>
+        <a href="#" id="udp-server2">Download Config</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>SSH Servers</h2>
+    <p id="ssh-update" class="update-date"></p>
+    <div class="servers">
+      <div class="server-box">
+        <strong>SSH Server 1</strong><br>
+        <a href="#" id="ssh-server1">Download Config</a>
+      </div>
+      <div class="server-box">
+        <strong>SSH Server 2</strong><br>
+        <a href="#" id="ssh-server2">Download Config</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>V2RAY Servers</h2>
+    <p id="v2ray-update" class="update-date"></p>
+    <div class="servers">
+      <div class="server-box">
+        <strong>V2RAY Server 1</strong><br>
+        <a href="#" id="v2ray-server1">Download Config</a>
+      </div>
+      <div class="server-box">
+        <strong>V2RAY Server 2</strong><br>
+        <a href="#" id="v2ray-server2">Download Config</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Powered by FASTER TAFI | Stay Fast, Stay Secure
+  </footer>
+
+  <script>
+    // Tracking changes for UDP servers
+    const udpServers = {
+      "server1": "http://new-server-link-udp1.com",
+      "server2": "http://new-server-link-udp2.com"
+    };
+    const udpLastModified = "17 أبريل 2025";
+
+    // Tracking changes for SSH servers
+    const sshServers = {
+      "server1": "http://new-server-link-ssh1.com",
+      "server2": "http://new-server-link-ssh2.com"
+    };
+    const sshLastModified = "16 أبريل 2025";
+
+    // Tracking changes for V2RAY servers
+    const v2rayServers = {
+      "server1": "http://new-server-link-v2ray1.com",
+      "server2": "http://new-server-link-v2ray2.com"
+    };
+    const v2rayLastModified = "15 أبريل 2025";
+
+    // Function to compare current link with stored link and update the date
+    function updateLastModified(section, storedServers, storedDate, sectionId) {
+      let updatedDate = localStorage.getItem(sectionId + "_date") || storedDate;
+      let updated = false;
+      
+      // Check for changes in the links
+      Object.keys(storedServers).forEach(server => {
+        let storedLink = localStorage.getItem(sectionId + "_" + server);
+        if (storedLink !== storedServers[server]) {
+          localStorage.setItem(sectionId + "_" + server, storedServers[server]);
+          updated = true;
+        }
+      });
+
+      if (updated) {
+        updatedDate = new Date().toLocaleDateString("ar-MA");
+        localStorage.setItem(sectionId + "_date", updatedDate);
+      }
+
+      document.getElementById(sectionId + "-update").innerText = `آخر تحديث: ${updatedDate}`;
+    }
+
+    // Call update functions for each section
+    updateLastModified("udp", udpServers, udpLastModified, "udp");
+    updateLastModified("ssh", sshServers, sshLastModified, "ssh");
+    updateLastModified("v2ray", v2rayServers, v2rayLastModified, "v2ray");
+  </script>
+</body>
+</html>
