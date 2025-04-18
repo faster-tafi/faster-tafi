@@ -98,11 +98,11 @@
     <p id="udp-update" class="update-date"></p>
     <div class="servers">
       <div class="server-box">
-        <strong>Server 1</strong><br>
+        <strong>WIN 0DH - Server 1</strong><br>
         <a href="#" id="udp-server1">Download Config</a>
       </div>
       <div class="server-box">
-        <strong>Server 2</strong><br>
+        <strong>WIN 0DH - Server 2</strong><br>
         <a href="#" id="udp-server2">Download Config</a>
       </div>
     </div>
@@ -113,12 +113,20 @@
     <p id="ssh-update" class="update-date"></p>
     <div class="servers">
       <div class="server-box">
-        <strong>SSH Server 1</strong><br>
+        <strong>INWI ****** - SSH Server 1</strong><br>
         <a href="#" id="ssh-server1">Download Config</a>
       </div>
       <div class="server-box">
-        <strong>SSH Server 2</strong><br>
+        <strong>INWI ****** - SSH Server 2</strong><br>
         <a href="#" id="ssh-server2">Download Config</a>
+      </div>
+      <div class="server-box">
+        <strong>IAM ****** - SSH Server 3</strong><br>
+        <a href="#">Download Config</a>
+      </div>
+      <div class="server-box">
+        <strong>IAM ****** - SSH Server 4</strong><br>
+        <a href="#">Download Config</a>
       </div>
     </div>
   </div>
@@ -128,11 +136,11 @@
     <p id="v2ray-update" class="update-date"></p>
     <div class="servers">
       <div class="server-box">
-        <strong>V2RAY Server 1</strong><br>
+        <strong>INWI ****** - V2RAY Server 1</strong><br>
         <a href="#" id="v2ray-server1">Download Config</a>
       </div>
       <div class="server-box">
-        <strong>V2RAY Server 2</strong><br>
+        <strong>INWI ****** - V2RAY Server 2</strong><br>
         <a href="#" id="v2ray-server2">Download Config</a>
       </div>
     </div>
@@ -159,50 +167,45 @@
   </footer>
 
   <script>
-    // Tracking changes for UDP servers
     const udpServers = {
       "server1": "http://new-server-link-udp1.com",
       "server2": "http://new-server-link-udp2.com"
     };
-    const udpLastModified = "17 أبريل 2025";
-
-    // Tracking changes for SSH servers
     const sshServers = {
       "server1": "http://new-server-link-ssh1.com",
       "server2": "http://new-server-link-ssh2.com"
     };
-    const sshLastModified = "16 أبريل 2025";
-
-    // Tracking changes for V2RAY servers
     const v2rayServers = {
       "server1": "http://new-server-link-v2ray1.com",
       "server2": "http://new-server-link-v2ray2.com"
     };
+
+    const udpLastModified = "17 أبريل 2025";
+    const sshLastModified = "16 أبريل 2025";
     const v2rayLastModified = "15 أبريل 2025";
 
-    // Function to compare current link with stored link and update the date
-    function updateLastModified(section, storedServers, storedDate, sectionId) {
-      let updatedDate = localStorage.getItem(sectionId + "_date") || storedDate;
+    function updateLastModified(section, servers, date, idPrefix) {
+      let updatedDate = localStorage.getItem(idPrefix + "_date") || date;
       let updated = false;
-      
-      // Check for changes in the links
-      Object.keys(storedServers).forEach(server => {
-        let storedLink = localStorage.getItem(sectionId + "_" + server);
-        if (storedLink !== storedServers[server]) {
-          localStorage.setItem(sectionId + "_" + server, storedServers[server]);
+
+      Object.keys(servers).forEach(key => {
+        const savedLink = localStorage.getItem(idPrefix + "_" + key);
+        if (savedLink !== servers[key]) {
+          localStorage.setItem(idPrefix + "_" + key, servers[key]);
           updated = true;
         }
+        const linkElement = document.getElementById(idPrefix + "-" + key);
+        if (linkElement) linkElement.href = servers[key];
       });
 
       if (updated) {
         updatedDate = new Date().toLocaleDateString("ar-MA");
-        localStorage.setItem(sectionId + "_date", updatedDate);
+        localStorage.setItem(idPrefix + "_date", updatedDate);
       }
 
-      document.getElementById(sectionId + "-update").innerText = آخر تحديث: ${updatedDate};
+      document.getElementById(idPrefix + "-update").innerText = "آخر تحديث: " + updatedDate;
     }
 
-    // Call update functions for each section
     updateLastModified("udp", udpServers, udpLastModified, "udp");
     updateLastModified("ssh", sshServers, sshLastModified, "ssh");
     updateLastModified("v2ray", v2rayServers, v2rayLastModified, "v2ray");
