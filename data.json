@@ -1,0 +1,388 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "amine",
+      "email": "aminetafi588@gmail.com",
+      "password": "$2a$10$rJd2/H4ehvDeic1IAJ3af.DSXdxSzqXv3xkgSolKD7J8de9hXxgC6",
+      "isOnline": true,
+      "lastSeen": "2025-07-15T23:00:13.621Z"
+    },
+    {
+      "id": 2,
+      "username": "aminepro",
+      "email": "amine123off@gmail.com",
+      "password": "$2a$10$EF.Apao9fmdGzLLJmsf6F.RCi/5rak7ixm2KV58DrbGStI8OwoRtu",
+      "isOnline": false,
+      "lastSeen": "2025-07-16T00:25:27.201Z"
+    },
+    {
+      "id": 3,
+      "username": "anastafi",
+      "email": "tafi123off@gmail.com",
+      "password": "$2a$10$35vA5XaE86jiUfrB3DaBXeCyQ1Qa/hDdmJJG6QoaG2AZmJPk63fPW",
+      "isOnline": false,
+      "lastSeen": "2025-07-16T00:05:46.197Z"
+    },
+    {
+      "id": 4,
+      "username": "Meriem Mejahid ",
+      "email": "maryanmojabjh14@gmail.com",
+      "password": "$2a$10$BKepM0Pmfb7toLPOshvb3OcANU64FQQSAK34cvqGnanAApNjw4QR.",
+      "isOnline": true,
+      "lastSeen": "2025-07-15T23:20:51.881Z"
+    },
+    {
+      "id": 5,
+      "username": "amineاا",
+      "phone": "+212631906392",
+      "password": "$2a$10$XB4Nhf/a3VGvCC4YR83J9uHLCd1dqWsJPL412BmcMLf.oLs7HYfH2",
+      "isOnline": true,
+      "lastSeen": "2025-07-16T01:13:34.326Z"
+    },
+    {
+      "id": 6,
+      "username": "anas",
+      "phone": "+212615443551",
+      "password": "$2a$10$g9wP4m8LS2ykFulU7sgCB.bKqppApJFROSGOAIslQozz./4Eefi3u",
+      "isOnline": true,
+      "lastSeen": "2025-07-16T01:11:10.799Z",
+      "avatar": "/uploads/96a60e029d234bafe21676b144bd3e85"
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "sender": 2,
+      "receiver": 1,
+      "content": "مرحبا",
+      "timestamp": "2025-07-15T22:56:42.467Z",
+      "isRead": false
+    },
+    {
+      "id": 2,
+      "sender": 2,
+      "receiver": 1,
+      "content": "كيف حالك",
+      "timestamp": "2025-07-15T22:57:04.764Z",
+      "isRead": false
+    },
+    {
+      "id": 3,
+      "sender": 2,
+      "receiver": 1,
+      "content": "يييي",
+      "timestamp": "2025-07-15T22:57:15.838Z",
+      "isRead": false
+    },
+    {
+      "id": 4,
+      "sender": 1,
+      "receiver": 2,
+      "content": "لحمد الله",
+      "timestamp": "2025-07-15T23:01:14.639Z",
+      "isRead": false
+    },
+    {
+      "id": 5,
+      "sender": 3,
+      "receiver": 2,
+      "content": "سلام وعليكم",
+      "timestamp": "2025-07-15T23:04:25.419Z",
+      "isRead": false
+    },
+    {
+      "id": 6,
+      "sender": 3,
+      "receiver": 4,
+      "content": "فين امريم",
+      "timestamp": "2025-07-15T23:09:18.863Z",
+      "isRead": false
+    },
+    {
+      "id": 7,
+      "sender": 3,
+      "receiver": 4,
+      "content": "هانية",
+      "timestamp": "2025-07-15T23:09:25.125Z",
+      "isRead": false
+    },
+    {
+      "id": 8,
+      "sender": 3,
+      "receiver": 2,
+      "content": "سلام",
+      "timestamp": "2025-07-15T23:09:46.826Z",
+      "isRead": false
+    },
+    {
+      "id": 9,
+      "sender": 3,
+      "receiver": 4,
+      "content": "مالك جوبي",
+      "timestamp": "2025-07-15T23:10:42.402Z",
+      "isRead": false
+    },
+    {
+      "id": 10,
+      "sender": 4,
+      "receiver": 3,
+      "content": "لباس",
+      "timestamp": "2025-07-15T23:10:50.715Z",
+      "isRead": false
+    },
+    {
+      "id": 11,
+      "sender": 3,
+      "receiver": 4,
+      "content": "هانية",
+      "timestamp": "2025-07-15T23:11:12.176Z",
+      "isRead": false
+    },
+    {
+      "id": 12,
+      "sender": 2,
+      "receiver": 4,
+      "content": "هيلوا",
+      "timestamp": "2025-07-15T23:30:56.302Z",
+      "isRead": false
+    },
+    {
+      "id": 13,
+      "sender": 3,
+      "receiver": 4,
+      "content": "الوا",
+      "timestamp": "2025-07-15T23:58:06.546Z",
+      "isRead": false
+    },
+    {
+      "id": 14,
+      "sender": 6,
+      "receiver": 5,
+      "content": "",
+      "imageUrl": "/uploads/807b47d4eac11c65056d1cb2ed449978",
+      "type": "image",
+      "timestamp": "2025-07-16T00:28:37.578Z",
+      "isRead": false
+    },
+    {
+      "id": 15,
+      "sender": 6,
+      "receiver": 5,
+      "content": "مرحبا",
+      "timestamp": "2025-07-16T00:28:44.565Z",
+      "isRead": false
+    },
+    {
+      "id": 16,
+      "sender": 6,
+      "receiver": 5,
+      "content": "مرحبا",
+      "timestamp": "2025-07-16T00:29:09.306Z",
+      "isRead": false
+    },
+    {
+      "id": 17,
+      "sender": 6,
+      "receiver": 5,
+      "content": "مرحبا",
+      "timestamp": "2025-07-16T00:35:11.198Z",
+      "isRead": false
+    },
+    {
+      "id": 18,
+      "sender": 6,
+      "receiver": 5,
+      "content": "يي",
+      "timestamp": "2025-07-16T00:35:51.884Z",
+      "isRead": false
+    },
+    {
+      "id": 19,
+      "sender": 6,
+      "receiver": 5,
+      "content": "مبحبو",
+      "timestamp": "2025-07-16T00:38:37.611Z",
+      "isRead": false
+    },
+    {
+      "id": 20,
+      "sender": 5,
+      "receiver": 6,
+      "content": "",
+      "imageUrl": "/uploads/9a9adf0378d137401d5da0d048ccc54a",
+      "type": "image",
+      "timestamp": "2025-07-16T00:39:24.533Z",
+      "isRead": false
+    },
+    {
+      "id": 21,
+      "sender": 5,
+      "receiver": 6,
+      "content": "سسس",
+      "timestamp": "2025-07-16T00:39:48.835Z",
+      "isRead": false
+    },
+    {
+      "id": 22,
+      "sender": 5,
+      "receiver": 6,
+      "content": "ششش",
+      "timestamp": "2025-07-16T00:39:51.755Z",
+      "isRead": false
+    },
+    {
+      "id": 23,
+      "sender": 5,
+      "receiver": 6,
+      "content": "",
+      "imageUrl": "/uploads/a393f8c0033b8401b505efc7df92238b",
+      "type": "image",
+      "timestamp": "2025-07-16T00:46:52.952Z",
+      "isRead": false
+    },
+    {
+      "id": 24,
+      "sender": 5,
+      "receiver": 6,
+      "content": "سس",
+      "timestamp": "2025-07-16T00:55:44.352Z",
+      "isRead": false
+    },
+    {
+      "id": 25,
+      "sender": 6,
+      "receiver": 5,
+      "content": "",
+      "imageUrl": "/uploads/84203a380b38387c02f12db463822b9f",
+      "type": "image",
+      "timestamp": "2025-07-16T00:56:24.190Z",
+      "isRead": false
+    },
+    {
+      "id": 26,
+      "sender": 6,
+      "receiver": 5,
+      "content": "😳😳😳",
+      "timestamp": "2025-07-16T00:58:19.531Z",
+      "isRead": false
+    },
+    {
+      "id": 27,
+      "sender": 5,
+      "receiver": 6,
+      "content": "",
+      "audioUrl": "/uploads/8fe18ad2be53a4e02d632868c539be09",
+      "type": "audio",
+      "timestamp": "2025-07-16T01:01:24.815Z",
+      "isRead": false
+    },
+    {
+      "id": 28,
+      "sender": 5,
+      "receiver": 6,
+      "content": "",
+      "imageUrl": "/uploads/15b39d4aad5913670a7e4633d5acce59",
+      "type": "image",
+      "timestamp": "2025-07-16T01:01:35.059Z",
+      "isRead": false
+    },
+    {
+      "id": 29,
+      "sender": 5,
+      "receiver": 6,
+      "content": "",
+      "imageUrl": "/uploads/1f9f3cfc291f2aa847679337447f874a",
+      "type": "image",
+      "timestamp": "2025-07-16T01:02:26.860Z",
+      "isRead": false
+    },
+    {
+      "id": 30,
+      "sender": 5,
+      "receiver": 6,
+      "content": "",
+      "audioUrl": "/uploads/d7c044176086e3177d04d72ff4b57044",
+      "type": "audio",
+      "timestamp": "2025-07-16T01:02:39.439Z",
+      "isRead": false
+    },
+    {
+      "id": 31,
+      "sender": 5,
+      "receiver": 6,
+      "content": "",
+      "audioUrl": "/uploads/33b1fe1807c02b53c730aa5698d96d16",
+      "type": "audio",
+      "timestamp": "2025-07-16T01:02:46.755Z",
+      "isRead": false
+    },
+    {
+      "id": 32,
+      "sender": 5,
+      "receiver": 6,
+      "content": "",
+      "imageUrl": "/uploads/37e5d347474c637eba85ccf9f769611d",
+      "type": "image",
+      "timestamp": "2025-07-16T01:03:12.061Z",
+      "isRead": false
+    },
+    {
+      "id": 33,
+      "sender": 6,
+      "receiver": 5,
+      "content": "",
+      "videoUrl": "/uploads/5207a4124e1297d75d73ce53c1fde4da",
+      "type": "video",
+      "timestamp": "2025-07-16T01:03:48.457Z",
+      "isRead": false
+    },
+    {
+      "id": 34,
+      "sender": 5,
+      "receiver": 6,
+      "content": "",
+      "audioUrl": "/uploads/c854add9a3ade2aea3a2a79f9711c097",
+      "type": "audio",
+      "timestamp": "2025-07-16T01:10:09.959Z",
+      "isRead": false
+    },
+    {
+      "id": 35,
+      "sender": 6,
+      "receiver": 5,
+      "content": "",
+      "imageUrl": "/uploads/aa5beef61e6c10e6e4f6134eaf54be19",
+      "type": "image",
+      "timestamp": "2025-07-16T01:10:49.740Z",
+      "isRead": false
+    },
+    {
+      "id": 36,
+      "sender": 5,
+      "receiver": 6,
+      "content": "",
+      "audioUrl": "/uploads/c03df018f2c2facb613b8b071c8c80bc",
+      "type": "audio",
+      "timestamp": "2025-07-16T01:12:53.510Z",
+      "isRead": false
+    }
+  ],
+  "nextUserId": 7,
+  "nextMessageId": 37,
+  "contacts": [
+    {
+      "id": 1,
+      "userId": 6,
+      "contactId": 5,
+      "addedAt": "2025-07-16T00:28:20.416Z"
+    },
+    {
+      "id": 2,
+      "userId": 5,
+      "contactId": 6,
+      "addedAt": "2025-07-16T00:38:37.611Z"
+    }
+  ],
+  "nextContactId": 3
+}
